@@ -1,0 +1,10 @@
+{
+  "id": "source-ingestor",
+  "name": "资料采集器（图片 / 网页）",
+  "version": "1.3.0",
+  "minAppVersion": "1.4.0",
+  "description": "把 PNG/图片 和 HTML 网页登记成带 frontmatter 的原始资料笔记，让它们进入「未编译 → 已编译」流水线",
+  "author": "WorkBuddy",
+  "authorUrl": "",
+  "isDesktopOnly": true
+}

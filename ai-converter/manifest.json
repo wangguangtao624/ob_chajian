@@ -1,0 +1,10 @@
+{
+  "id": "ai-converter",
+  "name": "AI 资料转换器（HTML/图片 → MD/PNG）",
+  "version": "1.0.2",
+  "minAppVersion": "1.4.0",
+  "description": "调用日日新大模型：HTML 转 Markdown / PNG 长截图，图片转 Markdown。API 与提示词全部可配置",
+  "author": "WorkBuddy",
+  "authorUrl": "",
+  "isDesktopOnly": true
+}

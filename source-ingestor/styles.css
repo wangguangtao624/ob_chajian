@@ -1,0 +1,90 @@
+/* 资料采集器 —— HTML 视图样式 */
+
+.si-html-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+}
+
+.si-html-bar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-bottom: 1px solid var(--background-modifier-border);
+  background: var(--background-secondary);
+  flex: 0 0 auto;
+}
+
+.si-html-btn {
+  padding: 2px 10px;
+  font-size: var(--font-ui-small);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: var(--interactive-normal);
+  color: var(--text-normal);
+}
+
+.si-html-btn:hover {
+  background: var(--interactive-hover);
+}
+
+.si-html-pct {
+  min-width: 56px;
+  text-align: center;
+  font-size: var(--font-ui-small);
+  color: var(--text-muted);
+}
+
+.si-html-holder {
+  flex: 1 1 auto;
+  overflow: auto;
+  background: #ffffff;
+}
+
+.si-html-frame {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ---------- 图片视图 ---------- */
+
+.si-img-root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+}
+
+.si-img-holder {
+  flex: 1 1 auto;
+  overflow: auto;
+  position: relative;
+  cursor: grab;
+  background-color: var(--background-primary);
+  background-image:
+    linear-gradient(45deg, var(--background-modifier-border) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--background-modifier-border) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--background-modifier-border) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--background-modifier-border) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0;
+}
+
+.si-img-holder.si-grabbing {
+  cursor: grabbing;
+}
+
+.si-img {
+  display: block;
+  margin: 10px;
+  max-width: none;
+  image-rendering: auto;
+  transform-origin: center center;
+  user-select: none;
+  -webkit-user-drag: none;
+}
